@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+    <record id="beranda_page_link" model="website.menu">
+      <field name="name">Beranda</field>
+      <field name="url">/page/beranda</field>
+      <field name="parent_id" ref="website.main_menu"/>
+      <field name="sequence" type="int">99</field>
+    </record>
+  </data>
+  <data>
+
+    <template name="Beranda page" id="website.beranda" page="True">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            
+          <div class="main-area">
+<!--        <section class="section">
+                <div class="container">
+                  <div id="carousel-demo" class="carousel">
+                    <div class="item-1">
+                      <div class="card-image">
+                          <img src="\modul_isikulkasku\static\src\img\slide1.jpg"/>
+                      </div>
+                      <div class="carousel-caption">
+                        <h2>Selamat datang di Isi Kulkasku</h2>
+                        <h6>Isi Kulkasku merupakan sebuah website ecommerce yang memudahkan Anda dalam melakukan transaksi secara online.</h6>
+                        <p><a href="#" class="btn btn-primary">Kontak Kami</a></p>
+                      </div>
+                    </div>
+                    <div class="item-2">
+                      <div class="card-image">
+                          <img src="\modul_isikulkasku\static\src\img\slide2.jpg"/>
+                      </div>
+                      <div class="carousel-caption">
+                        <h2>Kami Hadir untuk Berbagi</h2>
+                        <h6>Dapatkan diskon sekarang juga dengan berbelanja di Isi Kulkasku.</h6>
+                        <p><a href="#" class="btn btn-success">Kontak Kami</a></p>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+            </section> -->
+
+            <div class="area-wrapper">
+              <div class="kategori-area mb-4">
+
+                <div class="kategori-content col-xl-6 col-md-12 mr-1">
+                  <h2>Kategori</h2>
+                  <div class="row">
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgSayuran.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Sayur-sayuran</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgTelur.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Telur</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgBuah.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Buah-buahan</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgDaging.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Daging ayam</p>
+                        </div>
+                      </a>
+                    </div>
+                      
+                  </div>
+                </div>
+
+                <div class="kategori-content col-xl-6 col-md-12 ml-1">
+                  <h2>Kategori Pilihan</h2>
+                  <div class="row">
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgSayuran.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Sayur-sayuran</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgTelur.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Telur</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgBuah.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Buah-buahan</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="kategori-link">
+                      <a href="#" class="kategori-item">
+                        <div class="card mr-2">
+                          <img src="/modul_isikulkasku/static/src/img/imgDaging.png" class="card-img-top ikon rounded"/>
+                          <p class="card-text text-center pb-1">Daging ayam</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="kategori-area">
+                <div class="kategori-bar ">
+                  <div class="row">
+                    <a href="#" class="kategori-btn">
+                      <img src="/modul_isikulkasku/static/src/img/iconKategori.png"/>
+                      <span>Kategori</span>
+                    </a>
+                    <a href="#" class="kategori-btn">
+                      <img src="/modul_isikulkasku/static/src/img/iconDiskon.png"/>
+                      <span>Semua Promo</span>
+                    </a>
+                    <a href="#" class="kategori-btn">
+                      <img src="/modul_isikulkasku/static/src/img/iconSayuran.png"/>
+                      <span>Sayur-sayuran</span>
+                    </a>
+                    <a href="#" class="kategori-btn">
+                      <img src="/modul_isikulkasku/static/src/img/iconBuah.png"/>
+                      <span>Buah-buahan</span>
+                    </a>
+                    <a href="#" class="kategori-btn">
+                      <img src="/modul_isikulkasku/static/src/img/iconBeras.png"/>
+                      <span>Beras</span>
+                    </a>
+                    <a href="#" class="kategori-btn">
+                      <img src="/modul_isikulkasku/static/src/img/iconTelur.png"/>
+                      <span>Telur</span>
+                    </a>
+                    <a href="#" class="kategori-btn">
+                      <img src="/modul_isikulkasku/static/src/img/iconDaging.png"/>
+                      <span>Daging Ayam</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group-product-area">
+        
+              <div class="product-area">
+
+                <!-- Area untuk menambahkan baris produk -->
+                <div class="row justify-content-between">
+              
+                  <!--Area untuk menambahkan item card Produk -->
+                    <div class="card-item col-xl-2 col-md-6 col-12">
+                      <a href="#" class="item-produk">
+                        <div class="card">
+
+                          <div class="area-gambar">
+                            <img src="/modul_isikulkasku/static/src/img/produk/filetd.png" class="card-img-top gambar-produk" alt="Filet Dada"/>
+                            <div class="lbl-terbaik">
+                              <div class="icon-terbaik">
+                                <h5 class="px-2">Star</h5>
+                              </div>
+                            </div>
+                            <div class="lbl-diskon">
+                              <div class="icon-diskon">
+                                <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                              </div>
+                              <div class="teks-diskon">
+                                <span>50%</span>
+                                <span>OFF</span>
+                              </div>
+                            </div>
+                            <div class="lbl-gratisongkir">
+                              <div class="icon-gratisongkir">
+                                <span>Gratis</span>
+                                <span>Ongkir</span>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="card-body">
+                              <h5 class="card-title lbl-produk">Filet Dada/Kg</h5>
+                              <div class="wrap-detailproduk">
+                                <h5 class="card-link lbl-harga">Rp45.000</h5>
+                                <p class="card-text lbl-penjualan">5,4RB Terjual</p>
+                              </div>
+                          </div>  
+                        </div>
+                      </a>
+                    </div>
+                  
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kepala.png" class="card-img-top gambar-produk" alt="Kepala Ayam"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>25%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kepala/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp10.000</h5>
+                              <p class="card-text lbl-penjualan">240 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kulita.png" class="card-img-top gambar-produk" alt="Kulit Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div> -->
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kulit Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp25.000</h5>
+                              <p class="card-text lbl-penjualan">1RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/ceker.png" class="card-img-top gambar-produk" alt="Ceker Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>10%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Ceker Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp20.000</h5>
+                              <p class="card-text lbl-penjualan">3RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahuk.png" class="card-img-top gambar-produk" alt="Tahu Kuning"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>30%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div> -->
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Kuning</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp8.000</h5>
+                              <p class="card-text lbl-penjualan">76 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahup.png" class="card-img-top gambar-produk" alt="Tahu Putih"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Putih</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp6.000</h5>
+                              <p class="card-text lbl-penjualan">9 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>                                
+                </div>
+
+                <div class="row justify-content-between">
+              
+                  <!--Area untuk menambahkan item card Produk -->
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/filetd.png" class="card-img-top gambar-produk" alt="Filet Dada"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Filet Dada/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp45.000</h5>
+                              <p class="card-text lbl-penjualan">5,4RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kepala.png" class="card-img-top gambar-produk" alt="Kepala Ayam"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>25%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kepala/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp10.000</h5>
+                              <p class="card-text lbl-penjualan">240 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kulita.png" class="card-img-top gambar-produk" alt="Kulit Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div> -->
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kulit Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp25.000</h5>
+                              <p class="card-text lbl-penjualan">1RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/ceker.png" class="card-img-top gambar-produk" alt="Ceker Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>10%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Ceker Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp20.000</h5>
+                              <p class="card-text lbl-penjualan">3RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahuk.png" class="card-img-top gambar-produk" alt="Tahu Kuning"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>30%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div> -->
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Kuning</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp8.000</h5>
+                              <p class="card-text lbl-penjualan">76 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahup.png" class="card-img-top gambar-produk" alt="Tahu Putih"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Putih</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp6.000</h5>
+                              <p class="card-text lbl-penjualan">9 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>                                
+                </div>
+
+                <div class="row justify-content-between">
+              
+                  <!--Area untuk menambahkan item card Produk -->
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/filetd.png" class="card-img-top gambar-produk" alt="Filet Dada"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Filet Dada/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp45.000</h5>
+                              <p class="card-text lbl-penjualan">5,4RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kepala.png" class="card-img-top gambar-produk" alt="Kepala Ayam"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>25%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kepala/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp10.000</h5>
+                              <p class="card-text lbl-penjualan">240 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kulita.png" class="card-img-top gambar-produk" alt="Kulit Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div> -->
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kulit Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp25.000</h5>
+                              <p class="card-text lbl-penjualan">1RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/ceker.png" class="card-img-top gambar-produk" alt="Ceker Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>10%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Ceker Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp20.000</h5>
+                              <p class="card-text lbl-penjualan">3RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahuk.png" class="card-img-top gambar-produk" alt="Tahu Kuning"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>30%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div> -->
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Kuning</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp8.000</h5>
+                              <p class="card-text lbl-penjualan">76 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahup.png" class="card-img-top gambar-produk" alt="Tahu Putih"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Putih</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp6.000</h5>
+                              <p class="card-text lbl-penjualan">9 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>                                
+                </div>
+
+                <div class="row justify-content-between">
+              
+                  <!--Area untuk menambahkan item card Produk -->
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/filetd.png" class="card-img-top gambar-produk" alt="Filet Dada"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Filet Dada/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp45.000</h5>
+                              <p class="card-text lbl-penjualan">5,4RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kepala.png" class="card-img-top gambar-produk" alt="Kepala Ayam"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>25%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kepala/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp10.000</h5>
+                              <p class="card-text lbl-penjualan">240 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kulita.png" class="card-img-top gambar-produk" alt="Kulit Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div> -->
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kulit Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp25.000</h5>
+                              <p class="card-text lbl-penjualan">1RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/ceker.png" class="card-img-top gambar-produk" alt="Ceker Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>10%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Ceker Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp20.000</h5>
+                              <p class="card-text lbl-penjualan">3RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahuk.png" class="card-img-top gambar-produk" alt="Tahu Kuning"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>30%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div> -->
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Kuning</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp8.000</h5>
+                              <p class="card-text lbl-penjualan">76 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahup.png" class="card-img-top gambar-produk" alt="Tahu Putih"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Putih</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp6.000</h5>
+                              <p class="card-text lbl-penjualan">9 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>                                
+                </div>
+
+                <div class="row justify-content-between">
+              
+                  <!--Area untuk menambahkan item card Produk -->
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/filetd.png" class="card-img-top gambar-produk" alt="Filet Dada"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Filet Dada/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp45.000</h5>
+                              <p class="card-text lbl-penjualan">5,4RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kepala.png" class="card-img-top gambar-produk" alt="Kepala Ayam"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>25%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kepala/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp10.000</h5>
+                              <p class="card-text lbl-penjualan">240 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/kulita.png" class="card-img-top gambar-produk" alt="Kulit Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div> -->
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Kulit Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp25.000</h5>
+                              <p class="card-text lbl-penjualan">1RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/ceker.png" class="card-img-top gambar-produk" alt="Ceker Ayam"/>
+                          <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div>
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>10%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Ceker Ayam/Kg</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp20.000</h5>
+                              <p class="card-text lbl-penjualan">3RB Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahuk.png" class="card-img-top gambar-produk" alt="Tahu Kuning"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>30%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <!-- <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div> -->
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Kuning</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp8.000</h5>
+                              <p class="card-text lbl-penjualan">76 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="card-item col-xl-2 col-md-6 col-12">
+                    <a href="#" class="item-produk">
+                      <div class="card">
+
+                        <div class="area-gambar">
+                          <img src="/modul_isikulkasku/static/src/img/produk/tahup.png" class="card-img-top gambar-produk" alt="Tahu Putih"/>
+                          <!-- <div class="lbl-terbaik">
+                            <div class="icon-terbaik">
+                              <h5 class="px-2">Star</h5>
+                            </div>
+                          </div> -->
+                          <div class="lbl-diskon">
+                            <div class="icon-diskon">
+                              <img src="/modul_isikulkasku/static/src/img/lblDiskon.png"/>
+                            </div>
+                            <div class="teks-diskon">
+                              <span>50%</span>
+                              <span>OFF</span>
+                            </div>
+                          </div>
+                          <div class="lbl-gratisongkir">
+                            <div class="icon-gratisongkir">
+                              <span>Gratis</span>
+                              <span>Ongkir</span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title lbl-produk">Tahu Putih</h5>
+                            <div class="wrap-detailproduk">
+                              <h5 class="card-link lbl-harga">Rp6.000</h5>
+                              <p class="card-text lbl-penjualan">9 Terjual</p>
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>                                
+                </div>
+              </div>
+
+
+              <div class="pagination-area">
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Prev</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </t>
+    </template>
+
+    <record id="isi_kulkasku_page" model="ir.actions.act_url">
+      <field name="name">Beranda</field>
+      <field name="url">/page/beranda</field>
+      <field name="target">self</field>
+    </record>
+  </data>
+</openerp>
