@@ -104,6 +104,7 @@ body {
 			.logo-img img {
 				height: 90px;
 				width: 150px;
+				object-fit: contain;
 			}
 
 		.btn-kategori {
