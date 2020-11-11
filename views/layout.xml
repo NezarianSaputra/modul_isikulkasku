@@ -52,7 +52,7 @@
                                     <button class="btn-cari h-auto" type="submit">
                                         <i class="fa fa-search"></i>
                                     </button> 
-                                    <input type="text" name="search" class="search-query" placeholder="Cari Produk" t-att-value="search"/>
+                                    <input type="text" name="search" class="search-query form-control" placeholder="Cari Produk" t-att-value="search"/>
                                 </div>
                             </div>
                         </form>
