@@ -198,5 +198,42 @@
         </xpath>
     </template>
 
+    <template id="website_sale.categories_recursive" name="Custom Category list">
+        <li  t-att-class="'active' if c.id == int(category or 0) else None">
+                            <a class="kategori-item" t-att-href="keep('/shop/category/' + slug(c), category=0)">
+                                <!--<div class="card mr-2">-->
+                                    <span itemprop="image" t-attf-content="{{request.httprequest.url_root}}web/image/product.public.category/{{c.id}}/image" t-options="{'widget': 'image', 'zoom': 'image'}" t-field="c.image" />
+                                    <p t-field="c.name" class="card-text text-center pb-1"/>
+                                <!--</div>-->
+                            </a>        
+        </li>
+    <!--     <div class="area-wrapper">
+            <div class="kategori-area mb-4">
+
+                <div class="kategori-content col-xl-6 col-md-12 mr-1">
+                    <div class="row" t-att-class="'active' if c.id == int(category or 0) else None">
+    
+                        <div class="kategori-link">
+                            <a class="kategori-item" t-att-href="keep('/shop/category/' + slug(c), category=0)">
+                                <div class="card mr-2">
+                                    <span itemprop="image" t-attf-content="{{request.httprequest.url_root}}web/image/product.public.category/{{c.id}}/image" t-options="{'widget': 'image', 'zoom': 'image'}" t-field="c.image" class="card-img-top ikon rounded"/>
+                                    <p t-field="c.name" class="card-text text-center pb-1"/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+        <!-- 
+            <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
+                <t t-foreach="c.child_id" t-as="c">
+                    <t t-call="website_sale.categories_recursive" />
+                </t>
+            </ul>
+        </div> -->
+    </template>
+
   </data>
 </odoo>

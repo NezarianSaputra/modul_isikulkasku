@@ -94,6 +94,7 @@ class WebsiteSaleInherit(WebsiteSale):
             'bins': TableCompute().process(products, ppg),
             'rows': PPR,
             'categories': categs,
+            # 'categs_images' : categs_img, #Custom
             'attributes': attributes,
             'compute_currency': compute_currency,
             'keep': keep,
