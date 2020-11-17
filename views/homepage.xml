@@ -47,44 +47,47 @@
 
                 <div class="kategori-content col-xl-6 col-md-12 mr-1">
                   <h2>Kategori</h2>
-                  <div class="row">
-                    <div class="kategori-link">
-                      <a href="#" class="kategori-item">
-                        <div class="card mr-2">
-                          <img src="/modul_isikulkasku/static/src/img/imgSayuran.png" class="card-img-top ikon rounded"/>
-                          <p class="card-text text-center pb-1">Sayur-sayuran</p>
-                        </div>
-                      </a>
-                    </div>
+                    <div class="row">
+                      <div class="kategori-link">
+                        <a href="#" class="kategori-item">
+                          <div class="card mr-2">
+                            <img src="/modul_isikulkasku/static/src/img/imgSayuran.png" class="card-img-top ikon rounded"/>
+                            <p class="card-text text-center pb-1">Sayur-sayuran</p>
+                          </div>
+                        </a>
+                      </div>
 
-                    <div class="kategori-link">
-                      <a href="#" class="kategori-item">
-                        <div class="card mr-2">
-                          <img src="/modul_isikulkasku/static/src/img/imgTelur.png" class="card-img-top ikon rounded"/>
-                          <p class="card-text text-center pb-1">Telur</p>
-                        </div>
-                      </a>
-                    </div>
+                      <div class="kategori-link">
+                        <a href="#" class="kategori-item">
+                          <div class="card mr-2">
+                            <img src="/modul_isikulkasku/static/src/img/imgTelur.png" class="card-img-top ikon rounded"/>
+                            <p class="card-text text-center pb-1">Telur</p>
+                          </div>
+                        </a>
+                      </div>
 
-                    <div class="kategori-link">
-                      <a href="#" class="kategori-item">
-                        <div class="card mr-2">
-                          <img src="/modul_isikulkasku/static/src/img/imgBuah.png" class="card-img-top ikon rounded"/>
-                          <p class="card-text text-center pb-1">Buah-buahan</p>
-                        </div>
-                      </a>
-                    </div>
+                      <div class="kategori-link">
+                        <a href="#" class="kategori-item">
+                          <div class="card mr-2">
+                            <img src="/modul_isikulkasku/static/src/img/imgBuah.png" class="card-img-top ikon rounded"/>
+                            <p class="card-text text-center pb-1">Buah-buahan</p>
+                          </div>
+                        </a>
+                      </div>
 
-                    <div class="kategori-link">
-                      <a href="#" class="kategori-item">
-                        <div class="card mr-2">
-                          <img src="/modul_isikulkasku/static/src/img/imgDaging.png" class="card-img-top ikon rounded"/>
-                          <p class="card-text text-center pb-1">Daging ayam</p>
-                        </div>
-                      </a>
-                    </div>
+                      <div class="kategori-link">
+                        <a href="#" class="kategori-item">
+                          <div class="card mr-2">
+                            <img src="/modul_isikulkasku/static/src/img/imgDaging.png" class="card-img-top ikon rounded"/>
+                            <p class="card-text text-center pb-1">Daging ayam</p>
+                          </div>
+                        </a>
+                      </div>
                       
-                  </div>
+                    </div>
+                  
+                      
+                  
                 </div>
 
                 <div class="kategori-content col-xl-6 col-md-12 ml-1">

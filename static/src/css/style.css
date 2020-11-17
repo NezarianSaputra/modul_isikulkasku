@@ -494,7 +494,7 @@ li {
 	.kategori-area {
 		position: relative;
 		display: flex;
-		width: 100%;
+		width: 100%!important;
 		flex-direction: row;
 	}
 		.kategori-content {
