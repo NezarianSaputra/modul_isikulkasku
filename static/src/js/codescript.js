@@ -1,3 +1,11 @@
+odoo.define('website_sale.website_sale', function (require) {
+
+})
+	bulmaCarousel.attach('#slider', {
+  slidesToScroll: 1,
+  slidesToShow: 3,
+  infinite: true,
+});
 // odoo.define('website_sale.cart', function (require) {
 //     "use strict";
 

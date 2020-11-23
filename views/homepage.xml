@@ -15,7 +15,7 @@
         <div id="wrap" class="oe_structure oe_empty">
             
           <div class="main-area">
-          <!--<section class="section">
+          <section class="section">
                 <div class="container">
                   <div id="carousel-demo" class="carousel">
                     <div class="item-1">
@@ -40,7 +40,7 @@
                     </div>
                    </div>
                   </div>
-            </section> -->
+          </section> 
 
             <div class="area-wrapper">
               <div class="kategori-area mb-4">

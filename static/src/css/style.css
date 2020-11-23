@@ -578,7 +578,7 @@ li {
 			position: relative;
 			display: flex;
 			width: 100%;
-			flex-direction: row;
+			/*flex-direction: row;*/
 			flex-wrap: wrap;
 		}
 	@media (max-width: 1200px) {
@@ -589,6 +589,8 @@ li {
 		.card-item {
 			display: flex;
 			flex-wrap: wrap;
+			width: 175px;
+			height: 310px;
 		}
 			.item-produk, .item-produk:hover {
 				color: #000;
@@ -614,12 +616,26 @@ li {
 							.icon-terbaik {
 								background-color: #71b2ff;
 							}
+						/*.oe_product.oe_ribbon_promo div .ribbon-wrapper {
+						  display: block;
+						}
+						.oe_product div .ribbon-wrapper {
+						  display: none;
+						  width: 85px;
+						  height: 88px;
+						  z-index: 5;
+						  overflow: hidden;
+						  position: absolute;
+						  top: 0;
+						  right: 0;
+						}*/
 						.lbl-diskon {
-							position: absolute;
-							top: -3px;
-							right: -4%;
+							position: block;
+							top: 60;
+							right: -130px;
 							z-index: 1;
 						}
+
 							.icon-diskon {
 								float: right;
 								display: inline-block;
