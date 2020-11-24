@@ -245,32 +245,6 @@
                 </a>
             <!-- </div> -->
         </li>
-        <!--     <div class="area-wrapper">
-            <div class="kategori-area mb-4">
-
-                <div class="kategori-content col-xl-6 col-md-12 mr-1">
-                    <div class="row" t-att-class="'active' if c.id == int(category or 0) else None">
-    
-                        <div class="kategori-link">
-                            <a class="kategori-item" t-att-href="keep('/shop/category/' + slug(c), category=0)">
-                                <div class="card mr-2">
-                                    <span itemprop="image" t-attf-content="{{request.httprequest.url_root}}web/image/product.public.category/{{c.id}}/image" t-options="{'widget': 'image', 'zoom': 'image'}" t-field="c.image" class="card-img-top ikon rounded"/>
-                                    <p t-field="c.name" class="card-text text-center pb-1"/>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div> -->
-        <!-- 
-            <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
-                <t t-foreach="c.child_id" t-as="c">
-                    <t t-call="website_sale.categories_recursive" />
-                </t>
-            </ul>
-        </div> -->
     </template>
 
      <template id="website_sale.products_categories" inherit_id="website_sale.products" active="False" customize_show="True" name="Custom Product Categories">
@@ -283,10 +257,31 @@
                     <t t-call="website_sale.categories_recursive" />
                 </t>
             </ul>
+            <ul class="kategori-content col-xl-6 col-md-12 mr-1 row">
+                <li class="kategori-link" t-att-class=" '' if category else 'active' ">
+                    <!-- <a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a> -->
+                </li>
+                <t t-foreach="categories" t-as="c">
+                    <t t-call="website_sale.categories_recursive" />
+                </t>
+            </ul>
         </xpath>
+        <!-- <xpath expr="//div[@id='products_grid_before2']" position="inside">
+            <ul class="kategori-content col-xl-6 col-md-12 mr-1 row">
+                <li class="kategori-link" t-att-class=" '' if category else 'active' ">
+                    <a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>
+                </li>
+                <t t-foreach="categories" t-as="c">
+                    <t t-call="website_sale.categories_recursive" />
+                </t>
+            </ul>
+        </xpath> -->
         <xpath expr="//div[@id='products_grid_before']" position="attributes">
             <attribute name="class">area-wrapper</attribute>
         </xpath>
+        <!-- <xpath expr="//div[@id='products_grid_before2']" position="attributes">
+            <attribute name="class">area-wrapper</attribute>
+        </xpath> -->
         <xpath expr="//div[@id='products_grid']" position="attributes">
             <attribute name="class">group-product-area</attribute>
         </xpath>
@@ -387,19 +382,17 @@
                                 </t>
                             </div>
                         </t>
-                        <section>
-                            <h5>
+                        <section class="card-body">
                                 <strong>
-                                    <a itemprop="name" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))" t-att-content="product.name" t-field="product.name" />
+                                    <h5 class="card-title lbl-produk" itemprop="name" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))" t-att-content="product.name" t-field="product.name" />
                                 </strong>
-                            </h5>
                             <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
                                 <b>
                                     <t t-if="product.website_price_difference and website.get_current_pricelist().discount_policy=='without_discount'">
                                         <del class="text-danger mr8" style="white-space: nowrap;" t-esc="compute_currency(product.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}" />
                                     </t>
 
-                                    <span t-esc="product.website_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    <h5 class="card-link lbl-harga" t-esc="product.website_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
                                     <span itemprop="price" style="display:none;" t-esc="product.website_price" />
                                     <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
                                 </b>
