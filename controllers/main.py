@@ -94,11 +94,11 @@ class WebsiteSaleInherit(WebsiteSale):
             'bins': TableCompute().process(products, ppg),
             'rows': PPR,
             'categories': categs,
-            # 'categs_images' : categs_img, #Custom
             'attributes': attributes,
             'compute_currency': compute_currency,
             'keep': keep,
             'parent_category_ids': parent_category_ids,
+            'terjual': product.sudo().qty_terjual
         }
         if category:
             values['main_object'] = category
@@ -149,7 +149,8 @@ class WebsiteSaleInherit(WebsiteSale):
             'optional_product_ids': [p.with_context({'active_id': p.id}) for p in product.optional_product_ids],
             'get_attribute_exclusions': self._get_attribute_exclusions,
             'available_qty': product.sudo().qty_available, # tambahan tidak ada di source code asli odoo
-            'product_uom_name': product.sudo().uom_id.display_name # tambahan tidak ada di source code asli odoo
+            'product_uom_name': product.sudo().uom_id.display_name, # tambahan tidak ada di source code asli odoo
+            
         }
         return request.render("website_sale.product", values)
         
