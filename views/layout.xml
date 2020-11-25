@@ -398,8 +398,8 @@
                                             </t>
 
                                             <h5 class="" t-esc="product.website_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
-                                           <!--  <span itemprop="price" style="display:none;" t-esc="product.website_price" />
-                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" /> -->
+                                            <span itemprop="price" style="display:none;" t-esc="product.website_price" />
+                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
                                     </div>
                                     <p t-esc="terjual" class="lbl-penjualan">Terjual</p>
                                 </div>
