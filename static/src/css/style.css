@@ -578,19 +578,19 @@ li {
 			position: relative;
 			display: flex;
 			width: 100%;
-			/*flex-direction: row;*/
+			flex-direction: row;
 			flex-wrap: wrap;
 		}
-	@media (max-width: 1200px) {
+	/*@media (max-width: 1200px) {
 	.product-area {
 		flex-direction: column;
 		}
-	}
+	}*/
 		.card-item {
 			display: flex;
 			flex-wrap: wrap;
 			width: 175px;
-			height: 325px;
+			height: 325px!important;
 		}
 			.item-produk, .item-produk:hover {
 				color: #000;
@@ -622,6 +622,34 @@ li {
 							.icon-terbaik {
 								background-color: #71b2ff;
 							}
+						/*	.oe_product.oe_ribbon_promo .ribbon-wrapper {
+						  display: block;
+						}
+						.oe_product .ribbon-wrapper {
+						  display: none;
+						  width: 85px;
+						  height: 88px;
+						  z-index: 5;
+						  overflow: hidden;
+						  position: absolute;
+						  top: 0;
+						  right: 0;
+						}
+						.oe_product .ribbon {
+						  font: bold 15px Sans-Serif;
+						  color: white;
+						  text-align: center;
+						  -webkit-transform: rotate(45deg);
+						  -moz-transform: rotate(45deg);
+						  -ms-transform: rotate(45deg);
+						  -o-transform: rotate(45deg);
+						  position: relative;
+						  padding: 7px 0;
+						  left: -5px;
+						  top: 15px;
+						  width: 120px;
+						  cursor: default;
+						}*/
 						.lbl-diskon {
 							/*position: absolute;
 							top: ;
